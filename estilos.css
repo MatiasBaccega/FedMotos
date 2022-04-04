@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -7,11 +8,12 @@
 }
 
 main {
+  width: 100%;
+  height: 50em;
   background-image: url(img/main2.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  height: 80em;
 }
 
 main .titulo {
@@ -33,7 +35,7 @@ main .titulo {
 }
 
 main .titulo .titulo1 {
-  margin-top: 4em;
+  margin-top: 10em;
   margin-left: 14em;
 }
 
@@ -42,16 +44,18 @@ main .titulo .titulo1 h1 {
   font-size: 8em;
   text-transform: uppercase;
   font-family: 'Bebas Neue', cursive;
+  font-weight: bold;
 }
 
 main .titulo .titulo1 span {
-  color: black;
+  color: whitesmoke;
   padding: .2em;
 }
 
 main .titulo .titulo1 p {
-  color: black;
+  color: white;
   font-size: 1.5em;
+  font-weight: bold;
 }
 
 main .titulo .titulo1 .btn {
@@ -88,6 +92,10 @@ main .titulo .titulo1 .btn {
   color: orange;
 }
 
+.primeraMoto .colorS {
+  height: 52em;
+}
+
 .blitzStart {
   height: auto;
   width: 100%;
@@ -98,34 +106,51 @@ main .titulo .titulo1 .btn {
 }
 
 .blitzStart .start1 .start {
-  font-size: 4em;
+  font-size: 3.5em;
   margin-left: 2em;
-  margin-top: 1em;
   font-size: 'Bebas Neue', cursive;
   border-bottom: solid;
   color: #27A2FF;
   font-weight: bold;
 }
 
-.colorS {
-  height: 52em;
-}
-
 .especifiC {
-  margin: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .especifiC .especifiC1 {
-  padding-left: 3EM;
-  padding-right: 3EM;
-  padding-top: 1EM;
+  padding-left: 1em;
+  padding-right: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'PT Sans', sans-serif;
+  color: orange;
+  font-size: 1.5em;
+}
+
+.especifiC .especifiC1 .especifiC1-1 {
+  margin-top: 2em;
+  color: black;
+  font-size: .8em;
 }
 
 .especifiC .especifiC2 {
-  width: 70%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -139,13 +164,15 @@ main .titulo .titulo1 .btn {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  border-top: 1PX solid black;
-  border-bottom: 1PX solid black;
+  border-top: 1PX solid orange;
+  border-bottom: 1PX solid orange;
   margin-top: 1.2EM;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.1em;
 }
 
 .especifiC .especifiC3 {
-  width: 70%;
+  width: 95%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,9 +186,62 @@ main .titulo .titulo1 .btn {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  border-top: 1PX solid black;
-  border-bottom: 1PX solid black;
+  border-top: 1PX solid orange;
+  border-bottom: 1PX solid orange;
   margin-top: 1.2EM;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 1.1em;
+}
+
+.especifiC .bolD {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.usadosAccesorios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.usadosAccesorios .usadoS {
+  height: 30em;
+  padding-top: 1em;
+  height: 30em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 3em;
+  border: solid 3px orange;
+  border-radius: 5%;
+}
+
+.usadosAccesorios .usadoS .start {
+  width: 100%;
+  font-size: 2em;
+  font-size: 'Bebas Neue', cursive;
+  color: #27A2FF;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 1em;
 }
 
 /* .carousel-inner{
