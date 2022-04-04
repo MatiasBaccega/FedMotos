@@ -10,7 +10,7 @@
 
 main {
     width: 100%;
-    height: 50em;
+    height: 60em;
     background-image: url(img/main2.jpg);
     background-repeat: repeat;
     background-size: cover;
@@ -110,11 +110,11 @@ main {
         }
     }
     .especifiC2{
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         border-top: 1PX solid orange;
         border-bottom: 1PX solid orange;
         margin-top: 1.2EM;
@@ -122,11 +122,11 @@ main {
         font-size: 1.1em;
     }
     .especifiC3{
-        width: 95%;
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: start;
+        align-items: center;
         border-top: 1PX solid orange;
         border-bottom: 1PX solid orange;
         margin-top: 1.2EM;
@@ -169,48 +169,122 @@ flex-wrap: wrap;
 }
 }
 
+.wpp{
+    padding: 2em;
+    position: fixed;
+    bottom: 1em;
+    z-index: 100;
+    left: .5em;   
+    & img:hover {
+        transform: scale(1.2);
+        transition: 1s; 
+    }
+}
 
+.up{
+    padding: 2em;
+    position: fixed;
+    bottom: 1em;
+    z-index: 100;
+    right: .5em; 
+    
+}
 
-/* .carousel-inner{
-    height: 70em;
-    img{
-        height: 70em;
-    };
-} */
+.gestoriaFed {
+margin-top: 3em;
+}
 
-
-/* .gestoriA{
-    height: 50vh;
-    display: flex;
-    border-radius: 50%; 
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-image: url(img/gestoria.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 3em;
-    h2{
-        font-size: 4em;
-        font-family: 'Bebas Neue', cursive; 
-        color: white;
-        text-shadow: 0px 0px 12px black;
-    }     
-} */
-
-/* .gestoriA1{
-    height: 50vh;
+.gestoriA1{
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     align-items: start;
-    margin: 3em;
-} */
+    h2{
+        font-size: 3em;
+        font-family: 'Bebas Neue', cursive; 
+        color: black;
+        border-bottom: solid 3px #27A2FF;
+        margin-bottom: 1em; 
+    }  
+    p{
+    font-family:'PT Sans', sans-serif;
+    font-size: 1.5em;
+}
+}
 
-/* .carousel-caption{
+.contact {
+    justify-content: space-around;
+    align-items: center;
+    height: 30em;
+}
+
+.horario {
+    height: 20em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px #27A2FF;
+    border-radius: 5%;
+    
+    h3{
+        margin-bottom: 1.5em;
+        font-size: 2em;
+}   
+    p{
+        font-family:'PT Sans', sans-serif; 
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+}
+
+.telefono {
+    height: 20em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: solid 3px #27A2FF;
+    border-radius: 5%;
+    
+    h3{
+        margin-bottom: 1.5em;
+        font-size: 2em;
+}   
+    p{
+        font-family:'PT Sans', sans-serif; 
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+}
+
+.nomb {
+    padding: 1em;
+    text-align: start;
+}
+
+footer{
+    background-color: black;
+    height: 20em;
+    color: white;
     display: flex;
-    justify-content: start;
-    align-items: start;
-} */
+    justify-content: space-around;
+    align-items: end;
+    ul{
+        text-decoration: none;
+        list-style: none;
+        text-align: center;
+        padding: 3em;
+        li{
+            padding-top: 1em;
+            font-size: 1.2em;
+            img{
+                padding: .5em;
+            }
+        }
+    }
+    p{
+        font-size: 1.2em;
+    }
+}
